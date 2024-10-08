@@ -54,6 +54,8 @@ export default function Home() {
   const getMood = async()=>{
     try {
       const providerOrSigner = await getProviderOrSigner(true); 
+      // const provider = new ethers.BrowserProvider(provider);
+      // const _balance = provider.getBalance();
       const contract = new ethers.Contract(contractAddress, abi, providerOrSigner);
       const currentMood = await contract.getMood();
       setMood(currentMood);

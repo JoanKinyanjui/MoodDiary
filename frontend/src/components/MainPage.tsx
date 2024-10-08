@@ -21,11 +21,11 @@ function MainPage({mood , onChangeMood, address,connectWallet,transactionStatus}
   <div className='w-[90%] md:w-[80%] mx-auto '>
     <div className='mx-auto font-bold text-[24px] sm:text-[32px] md:text-[42px]'>Hi , How are you feeling Today ?</div>
    </div>
-   <div className='flex  w-[90%] md:w-[90%] xl:w-[70%] mx-auto flex-wrap  justify-between'>
-    <button className={`bg-gray-900 px-4 py-2 rounded-md h-[47px] flex justify-center items-center w-[23%] md:w-[200px] text-[10px]  sm:text-[12px] md:text-[14px]`}  onClick={()=>{onChangeMood('happy')}} >HAPPY</button>
-    <button className={`bg-gray-900 px-4 py-2 rounded-md h-[47px] flex justify-center items-center w-[23%] md:w-[200px] text-[10px]  sm:text-[12px] md:text-[14px]`}  onClick={()=>{onChangeMood('calm')}}>CALM</button>
-    <button className={`bg-gray-900 px-4 py-2 rounded-md h-[47px] flex justify-center items-center w-[23%] md:w-[200px] text-[10px]  sm:text-[12px] md:text-[14px]`}  onClick={()=>{onChangeMood('sad')}}>SAD</button>
-    <button className={`bg-gray-900 px-4 py-2 rounded-md h-[47px] flex justify-center items-center w-[23%] md:w-[200px] text-[10px]  sm:text-[12px] md:text-[14px]`}  onClick={()=>{onChangeMood('angry')}}>ANGRY</button>
+   <div className='grid grid-cols-2 md:grid-cols-4 gap-2  w-[90%] md:w-[90%] xl:w-[70%] mx-auto flex-wrap  justify-between'>
+    <button className={`bg-gray-900 px-4 py-2 rounded-md h-[47px] flex justify-center items-center w-[60%] md:w-[85%] text-[10px]  sm:text-[12px] md:text-[14px]`}  onClick={()=>{onChangeMood('happy')}} >HAPPY</button>
+    <button className={`bg-gray-900 px-4 py-2 rounded-md h-[47px] flex justify-center items-center w-[60%] md:w-[85%] text-[10px]  sm:text-[12px] md:text-[14px]`}  onClick={()=>{onChangeMood('calm')}}>CALM</button>
+    <button className={`bg-gray-900 px-4 py-2 rounded-md h-[47px] flex justify-center items-center w-[60%] md:w-[85%] text-[10px]  sm:text-[12px] md:text-[14px]`}  onClick={()=>{onChangeMood('sad')}}>SAD</button>
+    <button className={`bg-gray-900 px-4 py-2 rounded-md h-[47px] flex justify-center items-center w-[60%]  text-[10px]  sm:text-[12px] md:text-[14px]`}  onClick={()=>{onChangeMood('angry')}}>ANGRY</button>
    </div>
    <p className='mx-auto text-indigo-300 texxt-lg '>{transactionStatus}</p>
   </div>
